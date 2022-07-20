@@ -52,8 +52,7 @@ footer {
 .banner:hover .football {
   display: block;
   position: absolute;
-  animation: football 8s linear infinite, football 10s linear 50s infinite,
-    bouncing 2s linear infinite;
+  animation: bouncing 2s linear infinite;
 }
 .banner-details {
   margin: 65px 24px 111px 111px;
@@ -409,19 +408,26 @@ li a {
       top: 40%;
       transform: scale(0.5);
     }
-    50% {
+    25% {
       top: -0%;
       transform: scale(0.5);
     }
 
+    50% {
+      top: -25%;
+      transform: scale(0.5);
+    }
+    75% {
+      top: -0%;
+      transform: scale(0.5);
+    }
     100% {
-      top: -40%;
+      top: 40%;
       transform: scale(0.5);
     }
   }
   .banner:hover .football {
-    animation: football 8s linear infinite, football 10s linear 50s infinite,
-      bouncing 3s ease-out infinite;
+    animation: bouncing 3s ease-out infinite;
   }
   .banner-details {
     margin: 28px 53px 21px 53px;
