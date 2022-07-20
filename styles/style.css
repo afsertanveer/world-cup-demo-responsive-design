@@ -26,23 +26,23 @@ footer {
 }
 @keyframes bouncing {
   0% {
-    top: 40%;
+    top: 30%;
     left: 25%;
     right: 25%;
-    transform: scale(0.4);
+    transform: scale(0.7);
   }
 
   50% {
-    top: -20%;
+    top: -10%;
     left: 25%;
     right: 25%;
-    transform: scale(0.4);
+    transform: scale(0.7);
   }
   100% {
-    top: 40%;
+    top: 30%;
     left: 25%;
     right: 25%;
-    transform: scale(0.4);
+    transform: scale(0.7);
   }
 }
 .football {
