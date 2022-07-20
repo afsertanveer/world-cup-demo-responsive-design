@@ -24,6 +24,7 @@ footer {
   margin: 50px 8.74% 130px 8.74%;
   position: relative;
 }
+/* Animation CSS  */
 @keyframes bouncing {
   0% {
     top: 30%;
@@ -270,19 +271,9 @@ li a {
 .fa-youtube {
   color: #ff0000;
 }
-/*===================== Responsive Designing ============================= */
-@media only screen and (min-width: 1419px) and (max-width: 1556px) {
-  .banner {
-    width: 80%;
-  }
-  .banner-details p {
-    width: 316px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-/*===================== Designing for tablet/IPAD ============================= */
+/*===================== Responsive Designing Starts============================= 
+
+===================== Designing for tablet/IPAD ============================= */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   .body {
     width: 100%;
@@ -303,9 +294,6 @@ li a {
   }
   .banner-details p {
     width: 316px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   .watch-live {
     font-weight: 400;
@@ -445,7 +433,7 @@ li a {
   }
   .watch-live {
     padding-right: 20px;
-    margin-left: 50px;
+    margin-left: 40px;
     border-radius: 10px;
     font-size: 20px;
   }
