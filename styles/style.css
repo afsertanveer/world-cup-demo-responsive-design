@@ -7,6 +7,7 @@
 .body {
   font-family: "Poppins", sans-serif;
 }
+
 footer {
   background-color: #161616;
   width: 100%;
@@ -124,14 +125,16 @@ footer {
 #selected a {
   color: white;
 }
-.blogs {
+.blogs,
+.fixtures {
   margin-left: 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 24px;
   row-gap: 24px;
 }
-.blog {
+.blog,
+.fixture {
   width: 312px;
   height: 362px;
   border: 1px solid #e8e8e8;
@@ -162,20 +165,6 @@ footer {
   margin-right: 10px;
 }
 
-/*====================== Schedule Designing =========================*/
-.fixtures {
-  margin-left: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
-  column-gap: 20px;
-}
-.fixture {
-  width: 312px;
-  height: 242px;
-  border: 1px solid #e8e8e8;
-  border-radius: 10px;
-}
 .fixture .fixture-img {
   margin: 53px 30px 20px 30px;
   display: flex;
@@ -271,9 +260,92 @@ li a {
 .fa-youtube {
   color: #ff0000;
 }
-/*===================== Responsive Designing Starts============================= 
+/*===================== Responsive Designing Starts============================= */
+@media only screen and (min-width: 993px) and (max-width: 1546px) {
+  .body {
+    width: 100%;
+  }
+  .body .banner {
+    width: 100%;
+  }
+  .banner {
+    height: 406px;
+    border-radius: 30px;
+    margin: 50px;
+  }
+  .banner-details {
+    margin: 28px 0 61px 76px;
+  }
+  .banner-title {
+    font-size: 40px;
+  }
+  .banner-details p {
+    width: 316px;
+  }
+  .watch-live {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .banner-image img {
+    height: 340px;
+    width: 100%;
+    margin: 58px 17px 0 0;
+  }
 
-===================== Designing for tablet/IPAD ============================= */
+  .blogs-with-button {
+    margin: 40px 50px;
+    justify-content: space-between;
+  }
+  .change-view {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  .blogs,
+  .fixtures {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+  .blogs-with-button .blogs,
+  .fixtures {
+    margin: 30px 0 30px 0;
+    width: 100%;
+    height: 100%;
+  }
+  .blogs .blog {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+  .fixtures .fixture {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+  }
+  .footer-menu {
+    margin: 30px 100px 50px 100px;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    text-align: center;
+  }
+  .link-5 {
+    grid-row: 1/3;
+  }
+  .link-6 {
+    grid-row: auto;
+  }
+
+  ul li {
+    margin: 0;
+  }
+}
+
+/*===================== Designing for tablet/IPAD ============================= */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   .body {
     width: 100%;
@@ -305,6 +377,10 @@ li a {
     height: 340px;
     width: 100%;
     margin: 58px 17px 0 0;
+  }
+  .football img {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .blogs-with-button {
@@ -348,8 +424,13 @@ li a {
     margin: 30px 0 30px 0;
     width: 100%;
   }
-  .blog {
-    margin-left: 0;
+  .blogs .blog {
+    width: 100%;
+    height: 100%;
+  }
+  .fixtures .fixture {
+    width: 100%;
+    height: 100%;
   }
 
   .view-all {
@@ -394,28 +475,32 @@ li a {
   @keyframes bouncing {
     0% {
       top: 40%;
-      transform: scale(0.5);
+      transform: scale(0.25);
     }
     25% {
       top: -0%;
-      transform: scale(0.5);
+      transform: scale(0.25);
     }
 
     50% {
       top: -25%;
-      transform: scale(0.5);
+      transform: scale(0.25);
     }
     75% {
       top: -0%;
-      transform: scale(0.5);
+      transform: scale(0.25);
     }
     100% {
       top: 40%;
-      transform: scale(0.5);
+      transform: scale(0.25);
     }
   }
   .banner:hover .football {
     animation: bouncing 3s ease-out infinite;
+  }
+  .football img {
+    width: 100%;
+    margin: 0 auto;
   }
   .banner-details {
     margin: 28px 53px 21px 53px;
@@ -427,6 +512,7 @@ li a {
     line-height: 33px;
   }
   .banner-details p {
+    text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -441,8 +527,10 @@ li a {
     margin: 0px 63px 0px 17px;
   }
   .banner-image img {
-    width: 233px;
+    width: 100%;
     height: 245px;
+    margin: 0;
+    margin: 0 auto;
   }
   .blogs-with-button {
     margin-left: 20px;
@@ -452,8 +540,11 @@ li a {
     justify-content: space-evenly;
     align-items: center;
   }
-  .change-view {
+  .blogs-with-button .change-view {
     width: 100%;
+    margin-right: 0;
+  }
+  .change-view {
     padding: 0;
     flex-direction: column;
     align-items: center;
@@ -466,18 +557,25 @@ li a {
   .blogs-with-button,
   .blogs,
   .fixtures {
+    width: 96%;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .blogs .blog {
     width: 100%;
+    height: 100%;
+  }
+  .fixtures .fixture {
+    width: 100%;
+    height: 100%;
   }
   .blogs,
   .fixtures {
     grid-template-columns: 1fr;
-    row-gap: 0;
+    row-gap: 10px;
     margin-left: 0;
   }
-  .blog,
-  .fixture {
-    margin-bottom: 10px;
-  }
+
   footer {
     width: 100%;
   }
