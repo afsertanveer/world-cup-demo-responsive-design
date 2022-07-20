@@ -1,0 +1,517 @@
+/*================== Importing GOOGLE FONTS ============================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/*================== Common Styling ======================================*/
+
+.body {
+  font-family: "Poppins", sans-serif;
+}
+footer {
+  background-color: #161616;
+  width: 100%;
+  height: 444px;
+}
+/*================== banner styling ======================================*/
+
+.banner {
+  background-color: #161621;
+  height: 646px;
+  background-image: none;
+  display: flex;
+  border-radius: 30px;
+  color: white;
+  margin: 50px 8.74% 130px 8.74%;
+  position: relative;
+}
+@keyframes bouncing {
+  0% {
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    transform: scale(0.4);
+  }
+
+  50% {
+    top: -20%;
+    left: 25%;
+    right: 25%;
+    transform: scale(0.4);
+  }
+  100% {
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    transform: scale(0.4);
+  }
+}
+.football {
+  display: none;
+}
+
+.banner:hover .football {
+  display: block;
+  position: absolute;
+  animation: football 8s linear infinite, football 10s linear 50s infinite,
+    bouncing 2s linear infinite;
+}
+.banner-details {
+  margin: 65px 24px 111px 111px;
+}
+.banner-details h1 {
+  margin-bottom: 20px;
+}
+.banner-details p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.banner-title {
+  font-size: 70px;
+  font-weight: 700;
+}
+.banner-image img {
+  width: 581px;
+  height: 613px;
+  margin: 33px 79px 0 24px;
+}
+.watch-live {
+  background-color: #dd0000;
+  padding: 16px 59px 17px 25px;
+  color: white;
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  border-radius: 5px;
+}
+.fa-chevron-right {
+  margin-left: 10px;
+}
+
+/*============================ Blogs desigining starts ============================== */
+.blogs-with-button {
+  margin: 0 8.74% 130px 8.74%;
+  display: flex;
+}
+.change-view {
+  width: 312px;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  background-color: #161616;
+  padding: 30px 30px 0 30px;
+  border-radius: 10px;
+}
+.change-view a {
+  text-decoration: none;
+  color: black;
+}
+.change {
+  margin-bottom: 30px;
+  padding: 17px 39px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px;
+}
+#selected {
+  background-color: #dd0000;
+}
+#selected a {
+  color: white;
+}
+.blogs {
+  margin-left: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+}
+.blog {
+  width: 312px;
+  height: 362px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+.blog img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.blog-info {
+  margin-left: 20px;
+}
+.transfer {
+  margin-top: 20px;
+  padding: 4px 17px;
+  border: 1px solid #161616;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161616;
+}
+.fa-clock {
+  margin-right: 10px;
+}
+.fa-comment-dots {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+/*====================== Schedule Designing =========================*/
+.fixtures {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.fixture {
+  width: 312px;
+  height: 242px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+.fixture .fixture-img {
+  margin: 53px 30px 20px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fixture-img img {
+  height: 56.18px;
+  width: 93.04px;
+}
+.fixture-img span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #161616;
+}
+.fixture-info h2,
+p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.schedule-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #161616;
+}
+.date-time {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4d4d4d;
+}
+.view-all {
+  display: none;
+}
+/*====================== Footer Designing  =========================*/
+
+.footer-title {
+  padding-top: 104px;
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 23px;
+}
+.horizontal-line {
+  width: 82%;
+  margin: auto;
+  margin-top: 50px;
+  opacity: 0.1;
+}
+
+/*======================== footer menu =============================== */
+.footer-menu {
+  margin: 50px 351px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+  margin-right: 40px;
+}
+li a {
+  text-decoration: none;
+  color: #b9b9b9;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.social-icon {
+  margin: 50px 351px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-youtube {
+  font-size: 50px;
+  margin-left: 50px;
+}
+.fa-facebook {
+  color: #4267b2;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-youtube {
+  color: #ff0000;
+}
+/*===================== Responsive Designing ============================= */
+@media only screen and (min-width: 1419px) and (max-width: 1556px) {
+  .banner {
+    width: 80%;
+  }
+  .banner-details p {
+    width: 316px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+/*===================== Designing for tablet/IPAD ============================= */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .body {
+    width: 100%;
+  }
+  .body .banner {
+    width: 100%;
+  }
+  .banner {
+    height: 398px;
+    border-radius: 30px;
+    margin: 50px;
+  }
+  .banner-details {
+    margin: 28px 0 61px 76px;
+  }
+  .banner-title {
+    font-size: 40px;
+  }
+  .banner-details p {
+    width: 316px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .watch-live {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .banner-image img {
+    height: 340px;
+    width: 100%;
+    margin: 58px 17px 0 0;
+  }
+
+  .blogs-with-button {
+    margin: 40px 50px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .change-view {
+    width: 100%;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-around;
+  }
+  .blogs-with-button .change-view {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  .change-view button {
+    max-width: 75%;
+    height: 100%;
+  }
+  .change {
+    margin-right: 15px;
+    margin-bottom: 0px;
+    width: 230px;
+    height: 64px;
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .blogs,
+  .fixtures {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .blogs-with-button .blogs,
+  .fixtures {
+    margin: 30px 0 30px 0;
+    width: 100%;
+  }
+  .blog {
+    margin-left: 0;
+  }
+
+  .view-all {
+    display: block;
+  }
+  .footer-menu {
+    margin: 30px 100px 50px 100px;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    text-align: center;
+  }
+  .link-5 {
+    grid-row: 1/3;
+  }
+  .link-6 {
+    grid-row: auto;
+  }
+
+  ul li {
+    margin: 0;
+  }
+}
+/*===================== Designing for Small Device ============================= */
+@media screen and (max-width: 688px) {
+  .body {
+    width: 100%;
+    overflow: hidden;
+  }
+  .body .banner {
+    width: 100%;
+  }
+  .banner {
+    height: 100%;
+    border-radius: 30px;
+    margin: 20px 10px 70px;
+    flex-direction: column;
+  }
+  @keyframes bouncing {
+    0% {
+      top: 40%;
+      transform: scale(0.5);
+    }
+    50% {
+      top: -0%;
+      transform: scale(0.5);
+    }
+
+    100% {
+      top: -40%;
+      transform: scale(0.5);
+    }
+  }
+  .banner:hover .football {
+    animation: football 8s linear infinite, football 10s linear 50s infinite,
+      bouncing 3s ease-out infinite;
+  }
+  .banner-details {
+    margin: 28px 53px 21px 53px;
+  }
+  .banner-title {
+    font-weight: 700;
+    font-size: 31px;
+    text-align: center;
+    line-height: 33px;
+  }
+  .banner-details p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .watch-live {
+    padding-right: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .banner-image {
+    margin: 0px 63px 0px 17px;
+  }
+  .banner-image img {
+    width: 233px;
+    height: 245px;
+  }
+  .blogs-with-button {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .change-view {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+  .change {
+    border: 1px solid black;
+    background-color: white;
+  }
+  .blogs-with-button,
+  .blogs,
+  .fixtures {
+    width: 100%;
+  }
+  .blogs,
+  .fixtures {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+    margin-left: 0;
+  }
+  .blog,
+  .fixture {
+    margin-bottom: 10px;
+  }
+  footer {
+    width: 100%;
+  }
+  .footer-title {
+    padding-top: 30px;
+    line-height: 30px;
+  }
+  .footer-menu {
+    margin: 10px 0px;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  .social-icon {
+    margin: 0 0px;
+    margin-right: 50px;
+  }
+  .fa-facebook,
+  .fa-twitter,
+  .fa-youtube {
+    font-size: 25px;
+  }
+}
